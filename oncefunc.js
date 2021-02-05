@@ -5,7 +5,7 @@ return a+b
 
 
 function once(func) {
-let res = undefined;
+let res;
 return function (a,b) {
 
 if(res){
