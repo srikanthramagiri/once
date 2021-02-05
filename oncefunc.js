@@ -1,19 +1,21 @@
+function add(a,b) {
+return a+b
 
-   
-const once = function (func) {
-    var resposne;
-    return function () {
-        if (func) {
-            resposne = func.apply(this, arguments);
-            func = null;
-        }
-        return resposne;
-    }
-};
-function add(a, b) {
-    return a + b;
- }
-const onceAdd = once(add);
+}
 
-alert(onceAdd(2, 1));
-alert(onceAdd(3, 4));
+
+function once(func) {
+let res = undefined;
+return function (a,b) {
+
+if(res){
+else(res)
+}
+res = func.call(this, a, b)
+}
+}
+
+let onceadd = once(add) 
+
+alert(onceadd(2,3))
+alert(onceadd(3,5))
