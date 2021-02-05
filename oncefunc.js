@@ -9,13 +9,15 @@ let res;
 return function (a,b) {
 
 if(res){
-else(res)
+    return res
 }
-res = func.call(this, a, b)
+  else {
+    res = func.call(this, a, b)
+    return res
 }
 }
-
+}
 let onceadd = once(add) 
 
-alert(onceadd(2,3))
+alert(onceadd(1,2))
 alert(onceadd(3,5))
